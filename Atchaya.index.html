@@ -1,0 +1,70 @@
+
+    <Html>  
+        <head>
+            <h1>EMPLOYEE FORM</h1>
+        <title>  
+        Registration Page  
+        </title>  
+        </head>   
+        <br>  
+        <br> 
+        <body>
+
+            <script>
+              // Function to generate a random color in hexadecimal format
+              function getRandomColor() {
+                const letters = '0123456789ABCDEF';
+                let color = '#';
+                for (let i = 0; i < 6; i++) {
+                  color += letters[Math.floor(Math.random() * 16)];
+                }
+                return color;
+              }
+            
+              // Function to change the background color
+              function changeBackgroundColor() {
+                document.body.style.backgroundColor = getRandomColor();
+              }
+            
+              // Set an interval to change the background color every 3 seconds (3000 milliseconds)
+              setInterval(changeBackgroundColor, 3000);
+            </script>
+            
+            </body> 
+        <form>  
+        <label> Enter your name</label>         
+        <input type="text" name="Enter your name" size="15"/> <br> <br>  
+        <label> Enter your department: </label>     
+        <input type="text" name="Enter your department" size="15"/> <br> <br>  
+         Tell me little about your self       
+        <textarea cols="80" rows="5" value="Tell me little about your self ">
+
+        </textarea><br><br><br><br> 
+          Do your Exerxice at home?
+          <input type="radio" name="YES"/> YES
+          <input type="radio" name="NO"/> NO <br><br><br><br> 
+          How Do You Like to read about your favourite topics?<br>
+          <input type="checkbox" name="Books"/> Books
+          <input type="checkbox" name="online Resources"/> online Resources
+          <input type="checkbox" name="phone apps"/> phone apps
+          <input type="checkbox" name="Magazines"/> Magazines<br><br><br><br>  
+          what genere of movies do you like?
+          <select>
+           <option value="comedy">comedy</option>
+           <option value="horror">horror</option>
+           <option value="action">action</option>
+           <option value="Devotional">Devotional</option>
+         </select><br><br> <br><br> 
+
+         <button onclick="myalert()">
+        Submit Form
+     </button>
+     <script>
+          function myalert() {
+              alert("Submitted Succesfully");
+          }
+     </script>
+    
+        </form> 
+</body>
+</html>
